@@ -1,0 +1,214 @@
+:root   {   --color1:brown;
+            --color2:rgba(235, 97, 25, 0.83);
+            --color3:white; }   /* Definición de las variables de los colores que se usan en la hoja de estilo. Tan sólo modificando el valor de una de estas variables, muchos elementos dentro del html serán modificados*/
+
+*   {   box-sizing: border-box; }   /* Este atributo hace que cada elemento no aumente su ancho si es que se le aumenta padding o margin. Si a un elemento se le aumenta el padding, el espacio dentro de este elemento disminuirá, el elemento no se hará más grande. */
+
+body    {   background-color: rgba(247, 230, 167, 0.45);    }
+
+#logo   {   display: block; 
+            margin: auto; 
+            width: 70%; }   /* Aquí se le ha dado 70% de tamaño de imagen y margen izquierdo y derecho auto al logo para que esté centrado. Código en línea 11 de Recomenzar.html */
+
+#flancoi    {   position: absolute; 
+                left: 0; 
+                width: 8%; 
+                height: auto; 
+                z-index: -1;    }
+
+#flancod    {   position: absolute; 
+                right: 0; 
+                width: 8%; 
+                height: auto; 
+                z-index: -1;    }   /* Formato de la imagen en la línea 12 y 13 de Recomenzar.html  */
+
+h1  {   text-align: center; 
+        font-size: 39px; 
+        color: var(--color1); 
+        margin: 1px;    }   /* Formato del título que va en la línea 14 de Recomenzar.html */
+
+h2  {   text-align: center; 
+        font-size: 30px; 
+        color: var(--color2);   }   /* Formato de los sub títulos de codigos en líneas 15 y 23 de Recomenzar.html*/
+
+.categ  {   list-style-type: none; 
+            text-align: center; 
+            margin: 20px; 
+            padding: 0; }
+
+.categ li   {   display: inline-block; 
+                background-color: var(--color2); 
+                border-radius: 3px; 
+                padding:3px; 
+                margin: 3px;    }
+
+.categ  a   {   text-decoration: none; 
+                font-family: Verdana; 
+                color: var(--color3);   }
+
+.categ a:hover  {   background-color: var(--color1); 
+                    padding: 3px;   }   /*  Formato de las listas horizontales que empiezan en las líneas 16 y 24 de Recomenzar.html La última línea afecta a todos los "a" dentro de "categ". El background se cambia a color marron. */
+
+h2 > a  {   text-decoration: none; 
+            color: var(--color3); 
+            background-color: var(--color2); 
+            border-radius: 3px; 
+            padding:3px;    } 
+
+h2 > a:hover    {   color: var(--color1);   }   /* Este es el formato del último h2 que también es un link. Situado en la línea 31 de Recomenzar.html */
+
+#motivacion {   display: block; 
+                margin: auto; 
+                width: 50%; }   /* Formato de la imagen de la línea 32 de Recomenzar.html. También es afectado cuando la pantalla es superior a 800px, la condición está en la línea 20 de este documento. */
+
+.contenedor {   width: 80%;
+                margin: auto;   }
+
+.galery {   list-style-type: none; 
+            text-align: center; 
+            margin: 0; 
+            padding: 0; }
+
+.galery li  {   display: inline;    }
+
+.sacer  {   width: 24%; 
+            height: auto; 
+            padding: 5px;   }
+
+.sacer:hover    {   opacity: 0.8;   }   /* Formato de la lista que contiene las fotos frontales de las sacerdotisas. Cada foto es un link que lleva a la pagina personal de cada una. .Codigo en líneas 33 a 48 de Recomenzar.html. A cada <img> dentro de .galery se le ha dado la clase "sacer" para que puedan ser afectados directamente cuando se cumplen las condiciones de @media en las líneas 20 y 21 de este documento. Cada <img> clase "sacer" ocupa un 24% en pantallas grandes, en pantalla mediana un 30.9% y en pantallas pequeñas un 45.9%*/
+
+.footer {   background-color: rgba(105, 85, 13, 0.64);  }   /* Formato general del div de la línea 49 de Recomenzar.html*/
+
+div p   {   font-family: Verdana; 
+            font-size: 12px; 
+            text-align: center; 
+            color: var(--color1);   }   /* formato de todos los <p> contenidos dentro del <div> "footer". Codigo en lineas 49 al 56 de Recomenzar.html*/
+
+.present    {   width: 80%; 
+                margin: 10px auto; 
+                background-color: var(--color2); 
+                border-radius: 20px;    }   /* Formato del cuadro de presentación de la sacerdotisa. Código en líneas 15 al 19 de Sacerdotisa 1.html*/
+
+.texting    {   font-size: 16px;
+                margin: 0 2em;} /* Formato adicional para el texto de presentación de la sacerdotisa en las líneas 39 a 44 de Sacerdotisa 1.html*/
+
+.info   {   width: 24.9%; 
+            height:180px; 
+            background-color: var(--color2); 
+            border-radius: 20px; 
+            float: left; 
+            border: 1px solid brown; 
+            margin-bottom: 5px; }
+
+.serv   {   color: var(--color1); 
+            font-size: 20px; 
+            margin: 0;  }
+
+.det    {   color: var(--color3);   }
+
+.det li {   margin: 5px;    }   /* Formato de los 4 <div> que conforman la sección de información adicional de la sacerdotisa en las líneas 45 al 80 de Sacerdotisa 1.html. Todos los cuadors son responsive y se ven afectados por las condiciones de @media en las líneas 29 y 30 de este documento */
+
+.clearfix:after {   content: ""; 
+                    display: table; 
+                    clear: both;    }   /* Punto de quiebre que sirve para que la sección de información adiconal no se combine con la sección de área legal. Codigo en línea 81 de Sacerdotisa 1.html*/
+
+
+
+
+.logoperfil {   width: 20%;
+                display: block;
+                margin: auto;}
+
+.tituloperfil   {   font-size: 4.5em;
+                    margin: 0;  
+                    color: var(--color3);   }
+
+.subtitulo  {   font-size: 20px; 
+                margin: 0; 
+                color: white;   }
+
+.fono   {   font-size: 30px; 
+            margin: 0; 
+            color: white;   }
+
+.infor  {   width: 80%;
+            margin: auto;
+            display: grid;
+            min-height: 100vh;
+            grid-template-columns: 55% 45%;
+            grid-template-rows: 8em 1fr;    
+        }
+
+.smallphotos    {   /*border: 5px solid var(--color1);*/
+                    border-radius: 20px;
+                    grid-column: span 2;
+                    display: flex;
+                    justify-content: space-evenly;}
+
+.pequeimg   {   width: 7%;
+                margin: 10px;
+                border: 2px solid black;
+                overflow: hidden;}
+
+.pequeimg > img {width: 100%;}
+
+.pequeimg:hover img  {opacity: 0.7;}
+
+.bigphoto   {   background: rgba(247, 230, 167);
+                display: flex;
+                position: relative;
+                overflow: hidden;   
+        }
+
+.slider {   width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            transform: translateX(-100%);
+            transition: transform 1s;}
+
+.slider img {   height: 100%;   }
+
+.gato1:target   {   transform: translateX(0);  }   
+
+.gato2:target   {   transform: translateX(0);  }
+
+.gato3:target   {   transform: translateX(0);  }
+
+.gato4:target   {   transform: translateX(0);  }
+
+.gato5:target   {   transform: translateX(0);  }
+
+.gato6:target   {   transform: translateX(0);  }
+
+.gato7:target   {   transform: translateX(0);  }
+
+.gato8:target   {   transform: translateX(0);  }
+
+.txt    {   background: rgba(247, 230, 167);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;    }
+
+.adicional  {   width:80%;
+                margin: auto;   }
+
+
+
+
+@media only screen and (max-width: 850px)   {
+    .sacer {    width: 30.9%; 
+                margin: 6px 0;  } 
+    
+    #motivacion {   width: 95%; } 
+    
+    .info   {   width: 49.9%;   }           }  
+
+@media only screen and (max-width: 500px)   {
+    .sacer  {   width: 45.9%;   } 
+    
+    .info   {   width: 100%;    } 
+    
+    .det li {   font-size: 20px;    }       }/* Estas son las condiciones de ancho de pantalla que afectan tanto a las clases "sacer" de las líneas 18 y 19, "info" de la línea 24 "det li" dentro de los <div class="info"> así como al ID "motivacion" de la línea 14 de este documento. */
